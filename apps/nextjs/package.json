@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint 'src/**/*.{js,ts}' --quiet --fix",
+    "lint": "eslint 'src/**/*.{js,ts,jsx,tsx}' --quiet --fix",
     "prettier": "prettier --write ."
   },
   "dependencies": {

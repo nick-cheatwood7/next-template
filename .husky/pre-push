@@ -2,4 +2,5 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 # yarn workspaces run build
-echo \"✨ Simulating build scripts!\" && exit
+# echo \"✨ Simulating build scripts!\" && exit
+pnpm run --recursive if-present build

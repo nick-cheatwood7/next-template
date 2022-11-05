@@ -14,6 +14,7 @@ importers:
 
   apps/nextjs:
     specifiers:
+      '@my-org/eslint-config': workspace:*
       '@tanstack/react-query': ^4.14.3
       '@types/node': 18.11.9
       '@types/react': 18.0.25
@@ -24,6 +25,7 @@ importers:
       eslint-config-next: 13.0.2
       next: 13.0.2
       postcss: ^8.4.18
+      prettier: ^2.7.1
       react: 18.2.0
       react-dom: 18.2.0
       tailwindcss: ^3.2.2
@@ -41,8 +43,10 @@ importers:
       react-dom: 18.2.0_react@18.2.0
       typescript: 4.8.4
     devDependencies:
+      '@my-org/eslint-config': link:../../packages/eslint-config
       autoprefixer: 10.4.13_postcss@8.4.18
       postcss: 8.4.18
+      prettier: 2.7.1
       tailwindcss: 3.2.2_postcss@8.4.18
 
   packages/eslint-config:
@@ -62,12 +66,6 @@ importers:
       eslint-plugin-prettier: 4.2.1_aniwkeyvlpmwkidetuytnokvcm
       prettier: 2.7.1
       typescript: 4.8.4
-
-  packages/prettier-config:
-    specifiers:
-      prettier: ^2.7.1
-    dependencies:
-      prettier: 2.7.1
 
 packages:
 
@@ -2732,7 +2730,6 @@ packages:
     resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
     engines: {node: '>=10.13.0'}
     hasBin: true
-    dev: false
 
   /prop-types/15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}

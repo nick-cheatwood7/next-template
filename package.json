@@ -4,6 +4,12 @@
   "description": "",
   "main": "index.js",
   "private": true,
+  "engines": {
+    "node": ">=14.0.0",
+    "yarn": "please-use-pnpm",
+    "npm": "please-use-pnpm",
+    "pnpm": ">=7.0.0"
+  },
   "scripts": {
     "dev": "cd apps/nextjs && pnpm dev",
     "test": "echo \"Error: no test specified\" && exit 1",
